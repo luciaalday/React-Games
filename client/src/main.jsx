@@ -5,7 +5,8 @@ import App from './App.jsx'
 import './css/index.css'
 import './css/static.css'
 import './css/defaults.css'
-import './css/colorpicker.css'
+import './css/tictactoe.css'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -1,7 +1,26 @@
-svg {
-    stroke: currentColor;
-    stroke-width: 8;
-    fill:none;
-    stroke-linecap:round;
-    stroke-linejoin: round;
+@charset 'utf-8';
+
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --primary: #243455;
+    --primary-light: #243455;
+    --primary-lighter: #243455;
+    --primary-dark: #243455;
+    --secondary: #244566;
+    --secondary-light: #244566;
+    --secondary-lighter: #244566;
+    --secondary-dark: #244566;
+    --accent: #2f2f5f;
+    --accent-light: #45456d;
+    --accent-lighter: #6262a5;
+    --accent-dark: #242445;
+    --text: #222222;
+    --text-light: #cccccc;
+    --text-lighter: #eeeeee;
+    --text-dark: #000000;
+    --neutral-light: #99aa96;
+    --neutral-lighter: #d3dfd6;
+    --neutral-dark: #474d48;
+    --neutral-darker: #313531;
+    --neutral-darkest: #232723;
 }
