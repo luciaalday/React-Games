@@ -1,17 +1,11 @@
 @import url('./more.css');
 
-.game-link {
-    background-color: var(--primary);
-    padding: 5px 10px;
-    color: var(--text-light);
-    border-radius: 5px;
-    box-shadow: 0 0 5px #444;
-    transition: 0.2s ease;
-}
-.game-link:hover {
-    background-color: var(--primary-light);
-    color: var(--text-lighter);
-}
-.game-link:active {
-    transform: scale(0.8);
+.vertical-stretch-box {
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+    width: max-content;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
 }

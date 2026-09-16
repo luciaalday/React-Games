@@ -6,9 +6,9 @@ export default function Home() {
         <article>
             <h1>React Games</h1>
             <h2>Functional Games</h2>
-            <button>    
-                <Link to={'/tictactoe'} >Tic Tac Toe</Link>
-            </button>
+            <div className='vertical-stretch-box'>
+                <button><Link to={'/tictactoe'} >Tic Tac Toe</Link></button>
+            </div>
             <h2>In Progress</h2>
             <ul>
                 <li>None</li>
