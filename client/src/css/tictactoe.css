@@ -12,6 +12,7 @@
     grid-template-rows: repeat(3, 1fr);
     aspect-ratio: 1;
 }
+
 .child-grid {
     border: 1px solid #fff;
     display: grid;
@@ -19,7 +20,11 @@
     grid-template-rows: repeat(3, 1fr);
     padding: 5%;
     aspect-ratio: 1;
+    box-sizing: border-box;   /* padding was likely adding to size too */
+    min-width: 0;
+    min-height: 0;
 }
+
 button.square {
     background-color: transparent;
     border: 1px solid #266878;
@@ -31,6 +36,11 @@ button.square {
     aspect-ratio: 1;
     transition: 0.2s ease;
     color: var(--text-dark);
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    font-size: clamp(0.8rem, 1vw, 2.5rem);
+    padding: 0;
 }
 button.square:active {
     transform: none;
