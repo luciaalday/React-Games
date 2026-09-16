@@ -1,0 +1,114 @@
+@charset 'utf-8';
+
+:root {
+    --nav-1: #d9e0f7;
+    --nav-2: #229270;
+    --nav-text: #f0b0b8;
+    --nav-text-2: #c73e4e;
+    --hover-bg: #ffffff90;
+    --hover-bg-2: #ffffff20;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: 0.5s ease;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.nav-link:hover {
+    background-color: var(--hover-bg);
+}
+.nav-link:active {
+    color: var(--nav-text-2);
+}
+.disabled:active {
+    color: var(--nav-text);
+}
+.disabled:hover {
+    background-color: transparent;
+}
+
+.nav-links {
+    background: linear-gradient(to bottom right, var(--nav-1), var(--nav-2));
+    display: flex;
+    transition: 0.4s ease-in-out;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.dropdown:hover {
+    background-color: var(--hover-bg-2);
+}
+.dropdown-content {
+    transition: 0.4s ease;
+    max-height: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    min-width: max-content;
+    box-sizing: border-box;
+}
+.dropdown:hover .dropdown-content {
+    max-height: 400px;
+}
+
+@media (width<=780px) {
+    .nav-links {
+        max-height: 0px;
+        top: 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    nav .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        border-radius: 100px;
+        border-top-right-radius: 0;
+        background-color: #229270;
+        text-align: center;
+        color: var(--nav-text);
+    }
+    nav:hover .nav-links {
+        opacity: 90%;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    .dropdown-content .nav-link {
+        padding-left: 20px;
+    }
+}
+@media (width>780px) {
+    nav .icon {
+        display: none;
+    }
+    .dropdown-content {
+        background-color: var(--nav-1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+        width: max-content;
+    }
+}
+
+footer {
+    background-color: var(--nav-1);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
