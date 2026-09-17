@@ -9,3 +9,38 @@
     margin: auto;
     flex-direction: column;
 }
+
+.card {
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+
+.color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+}
+
+.color-swatch {
+    min-width: 120px;
+    width: 120px;
+    min-height: 120px;
+    height: 120px;
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    box-shadow: 0 0 5px 1px #0004;
+    border: 1px solid #fff8;
+}
+
+.color-group {
+    margin: auto;
+    width: 80%;
+}
