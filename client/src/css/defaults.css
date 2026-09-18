@@ -3,24 +3,19 @@
 :root {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     --primary: #243455;
-    --primary-light: #243455;
-    --primary-lighter: #243455;
-    --primary-dark: #243455;
-    --secondary: #244566;
-    --secondary-light: #244566;
-    --secondary-lighter: #244566;
-    --secondary-dark: #244566;
-    --accent: #2f2f5f;
-    --accent-light: #45456d;
-    --accent-lighter: #6262a5;
-    --accent-dark: #242445;
+    --primary-light: #3a4f7a;
+    --primary-lighter: #7591c9;
+    --primary-dark: #142038;
+    --accent: #a77330;
+    --accent-light: #dac155;
+    --accent-lighter: #f7e78a;
+    --accent-dark: #775015;
     --text: #222222;
     --text-light: #cccccc;
     --text-lighter: #eeeeee;
     --text-dark: #000000;
     --neutral-light: #99aa96;
     --neutral-lighter: #d3dfd6;
-    --neutral-dark: #474d48;
-    --neutral-darker: #313531;
-    --neutral-darkest: #232723;
+    --neutral-dark: #3b423b;
+    --neutral-darker: #232723;
 }

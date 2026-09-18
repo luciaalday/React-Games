@@ -3,8 +3,9 @@ import '../css/defaults.css';
 
 const COLOR_GROUPS = {
     'Primary': ['--primary', '--primary-light', '--primary-lighter', '--primary-dark'],
-    'Accent': ['--accent'],
-    'Neutral': ['--background', '--text'],
+    'Accent': ['--accent', '--accent-light', '--accent-lighter', '--accent-dark'],
+    'Text': ['--text', '--text-light', '--text-lighter', '--text-dark'],
+    'Neutral': ['--neutral-light', '--neutral-lighter', '--neutral-dark', '--neutral-darker'],
 };
 
 export default function Stylesheet() {
