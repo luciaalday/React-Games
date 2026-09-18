@@ -15,6 +15,7 @@ nav {
 }
 .nav-link:hover {
     background-color: var(--neutral-dark);
+    color: var(--text-lighter);
 }
 .nav-link:active {
     color: var(--text-lighter);
@@ -101,7 +102,7 @@ nav {
 }
 
 footer {
-    background-color: var(--nav-1);
+    background-color: var(--neutral-lighter);
     padding: 50px;
     display: flex;
     justify-content: center;

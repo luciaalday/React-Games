@@ -1,13 +1,15 @@
 // src/pages/Home.jsx
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+    const nav = useNavigate();
+
     return (
         <article>
             <h1>React Games</h1>
             <h2>Functional Games</h2>
             <div className='vertical-stretch-box'>
-                <button><Link to={'/tictactoe'} >Tic Tac Toe</Link></button>
+                <button onClick={()=>nav('/tictactoe')}>Tic Tac Toe</button>
             </div>
             <h2>In Progress</h2>
             <ul>

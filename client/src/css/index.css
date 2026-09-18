@@ -74,8 +74,13 @@ h1 {
 }
 
 a {
-    text-decoration: none;
     color: currentColor;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: none;
 }
 
 ul {

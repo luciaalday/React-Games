@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from './static/Footer';
 import Home from './pages/Home';
 import Nav from './static/Nav';
+import Error from './pages/Error';
 import Stylesheet from './pages/Stylesheet';
 import TicTacToe from './pages/TicTacToe';
 
