@@ -23,11 +23,7 @@ export default function TicTacToe() {
             return { ...b, plays: newPlays };
         });
         setBoard(newBoard);
-        if (newBoard[i].plays?.includes(null)){
-            setAllowAll(false);
-        } else {
-            setAllowAll(true);
-        }
+        setAllowAll(!newBoard[j].plays.includes(null));
         setSquare(j);
         const newWins = checkChildWin(i, newBoard);
         const won = getWinner(newWins);
@@ -38,7 +34,7 @@ export default function TicTacToe() {
     }
 
     const checkChildWin = (i, newBoard) => {
-        if (wins[i]) return;
+        if (wins[i]) return wins;
         const p = newBoard[i].plays;
         let curr = false;
         if (   (p[0] && p[0]===p[4] && p[4]===p[8])
@@ -71,7 +67,7 @@ export default function TicTacToe() {
                 return wins[a][0];
             }
         }
-        if (turn >= 81) return 'Draw';
+        if (turn >= 80) return 'Draw';
         return null;
     };
 
@@ -80,7 +76,7 @@ export default function TicTacToe() {
             if (winner === 'Draw') {
                 setMessage('Draw! At least one of you needs to get better');
             } else {
-                setMessage(`${turn % 2 === 1 ? playerOneName : playerTwoName} wins!`);
+                setMessage(`${turn % 2 === 0 ? playerOneName : playerTwoName} wins!`);
             }
         }
     }
@@ -112,12 +108,12 @@ export default function TicTacToe() {
                     <br></br>
                     <div className='parent-grid'>
                         {board.map((key, i) =>
-                        <div
+                        <div key={i}
                             className={`child-grid ${i<3 && 'top'} ${i>5 && 'bottom'} ${i%3==0 && 'left'} ${(i+1)%3==0 && 'right'} ${wins[i]} ${square===i && 'disabled'}`}
                             style={allowAll ? {boxShadow: `none`} : square === i ? { boxShadow: `inset 0 0 10px 3px ${turn % 2 === 0 ? '#4650ff' : '#f84'}` } : {}}
                         >
                             {key.plays.map((play, j) =>
-                                <button
+                                <button key={j}
                                 className={`square ${j<3 && 'top'} ${j>5 && 'bottom'} ${j%3==0 && 'left'} ${(j+1)%3==0 && 'right'}`}
                                 onClick={()=>handleTurn(i, j)}
                                 disabled={allowAll ? '' : (square!==null && square!==i)}

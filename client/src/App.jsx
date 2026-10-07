@@ -7,6 +7,8 @@ import Nav from './static/Nav';
 import Error from './pages/Error';
 import Stylesheet from './pages/Stylesheet';
 import TicTacToe from './pages/TicTacToe';
+import SwimOS from './pages/SwimOS';
+import TripPlanner from './pages/TripPlanner';
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/style' element={<Stylesheet />} />
         <Route path='/tictactoe' element={<TicTacToe />} />
+        <Route path='/swim' element={<SwimOS />} />
+        <Route path='/trips' element={<TripPlanner />} />
         <Route path='*' element={<Error code={404} />} />
       </Routes>
       <Footer />

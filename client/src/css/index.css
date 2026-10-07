@@ -23,7 +23,7 @@ article {
     flex: 1;
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    padding: 10%;
 }
 
 section {
@@ -68,8 +68,8 @@ input {
 h1 {
     text-align: center;
     padding: 20px;
-    border-bottom: 2px dotted var(--accent);
-    border-top: 1px dotted var(--accent);
+    border: 2px dotted var(--accent);
+    border-radius: 15px;
     background-color: var(--neutral-lighter)
 }
 
@@ -83,7 +83,22 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
-    width: fit-content;
-    margin: auto;
+table {
+    width: 100%;
+    border: 1px solid var(--primary-light);
+}
+th {
+    border: 1px solid var(--primary-lighter);
+}
+td {
+    border: 1px dashed var(--primary-lighter);
+    vertical-align: top;
+}
+
+.drive {
+    background-color: #f7e78a60;
+}
+
+ul ul {
+    color: var(--primary);
 }

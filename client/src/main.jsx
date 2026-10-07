@@ -7,6 +7,8 @@ import './css/static.css'
 import './css/defaults.css'
 import './css/tictactoe.css'
 import './css/more.css'
+import './css/watch.css'
+import './css/calendar.css'
 
 
 createRoot(document.getElementById('root')).render(

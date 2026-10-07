@@ -7,6 +7,8 @@ export default function Nav() {
             <div className="nav-links">
                 <Link className="nav-link" to='/'>Home</Link>
                 <Link className="nav-link" to='/style'>Stylesheet</Link>
+                <Link className="nav-link" to='/swim'>SwimOS</Link>
+                <Link className="nav-link" to='/trips'>Trip Planner</Link>
                 <div className="dropdown">
                     <div className="nav-link inactive">Games</div>
                     <div className="dropdown-content">

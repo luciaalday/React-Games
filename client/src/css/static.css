@@ -4,6 +4,7 @@ nav {
     display: flex;
     top: 0;
     z-index: 999;
+    width: 100%;
 }
 
 .nav-link {
@@ -31,7 +32,7 @@ nav {
     background: linear-gradient(to bottom right, var(--neutral-dark), var(--neutral-darker));
     display: flex;
     transition: 0.4s ease-in-out;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     align-items: stretch;
 }
