@@ -25,7 +25,7 @@ export default function TripPlanner() {
               <li><label><input type="checkbox" />Ziploc bags for dirty supplies</label></li>
               <li><label><input type="checkbox" />Paint</label></li>
               <li><label><input type="checkbox" />Paint brushes</label></li>
-              <li><label><input type="checkbox" />Paint water cup (sealable)</label></li>
+              <li><label><input type="checkbox" />Paint water tupper (sealable)</label></li>
               <li><label><input type="checkbox" />Canvas(es)</label></li>
               <li><label><input type="checkbox" />Paper towel</label></li>
               <li><label><input type="checkbox" />Paint rag</label></li>
@@ -109,7 +109,7 @@ export default function TripPlanner() {
               <li><label><input type="checkbox" />Liquid IV</label></li>
               <li><label><input type="checkbox" />Ice breakers</label></li>
               <li><label><input type="checkbox" />Dried fruit</label></li>
-              <li><label><input type="checkbox" />Sweet snacks</label></li>
+              <li><label><input type="checkbox" />Croissants</label></li>
             </ul>
             <p>*<i>need to buy</i></p>
             <h2>Itinerary</h2>

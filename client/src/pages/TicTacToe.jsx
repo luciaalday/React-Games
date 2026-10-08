@@ -82,9 +82,8 @@ export default function TicTacToe() {
     }
 
     return (
-        <div className='tictactoe'>
+        <article className='tictactoe'>
             <h1>TicTacToe (grid placement and tracking practice)</h1>
-            <article>
                 {start
                 ? <div style={{margin:'5%'}}>
                     <input type='text' placeholder='Player One Name' onChange={(e)=>setPlayerOneName(e.target.value.trim() || 'Player One')} />
@@ -126,7 +125,6 @@ export default function TicTacToe() {
                     </div>
                 </div>
             )}
-            </article>
-        </div>
+        </article>
     )
 }
