@@ -4,6 +4,12 @@ export default function TripPlanner() {
             <h1>Trip Planner</h1>
             <h2>Packing List</h2>
             <ul>
+                <li>To Do</li>
+                <ul>
+                    <li>Big 5: headlamp, turquoise backpack</li>
+                    <li>Safeway: water, snacks, monsters</li>
+                    <li>Bank: get cash</li>
+                </ul>
                 <li>Hiking</li>
                 <ul>
                     <li>Headlamp</li>
