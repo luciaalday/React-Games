@@ -99,6 +99,35 @@ td {
     background-color: #f7e78a60;
 }
 
-ul ul {
-    color: var(--primary);
+ul {
+    list-style:circle;
 }
+
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    padding: 0;
+    border: 1px solid var(--accent-light);
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"]:checked {
+    border-color: var(--accent-dark);
+    background: var(--accent);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    content: "\2713";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 10px;
+    line-height: 1;
+  }

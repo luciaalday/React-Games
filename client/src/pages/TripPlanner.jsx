@@ -3,80 +3,113 @@ export default function TripPlanner() {
         <article>
             <h1>Trip Planner</h1>
             <h2>Packing List</h2>
+            <h3>To Do</h3>
             <ul>
-                <li>To Do</li>
-                <ul>
-                    <li>Big 5: headlamp, turquoise backpack</li>
-                    <li>Safeway: water, snacks, monsters</li>
-                    <li>Bank: get cash</li>
-                </ul>
-                <li>Hiking</li>
-                <ul>
-                    <li>Headlamp</li>
-                    <li>Case of water</li>
-                    <li>Snacks*</li>
-                    <li>Backpack*</li>
-                    <li>Good hiking shoes</li>
-                    <li>Portable phone charger</li>
-                </ul>
-                <li>Painting</li>
-                <ul>
-                    <li>Lap easel</li>
-                    <li>Paint</li>
-                    <li>Paint brushes</li>
-                    <li>Paint water cup (sealable)</li>
-                    <li>Canvas(es)</li>
-                    <li>Paper towel</li>
-                    <li>Paint rag</li>
-                </ul>
-                <li>Stargazing</li>
-                <ul>
-                    <li>Binoculars</li>
-                    <li>Camera</li>
-                    <li>Tripod</li>
-                </ul>
-                <li>Navajo Nation State Fair</li>
-                <ul>
-                    <li>Cash?</li>
-                </ul>
-                <li>Overnight</li>
-                <ul>
-                    <li>Period products</li>
-                    <li>PJs</li>
-                    <li>Perfume</li>
-                    <li>Deodorant</li>
-                    <li>Shower stuff</li>
-                    <li>Socks</li>
-                    <li>Fuzzy socks</li>
-                </ul>
-                <li>For Rachel</li>
-                <ul>
-                    <li>Gift*</li>
-                </ul>
-                <li>Clothes</li>
-                <ul>
-                    <li><b>Friday</b>: Wear leggings and sporty top, bring hoodie and sweats</li>
-                    <li><b>Saturday</b>: Cute and comfortable</li>
-                    <li><b>Sunday</b>: Something to drive home in</li>
-                </ul>
-                <li>Camping</li>
-                <ul>
-                    <li>Trash bag</li>
-                    <li>Pillow</li>
-                    <li>Blanket</li>
-                    <li>Sleeping bag</li>
-                    <li>Sleeping pad*</li>
-                    <li>Tent*</li>
-                    <li>Picnic blanket*</li>
-                </ul>
-                <li>Food</li>
-                <ul>
-                    <li>Water (Entire case)</li>
-                    <li>Granola bars</li>
-                    <li>Liquid IV</li>
-                    <li>Ice breakers</li>
-                    <li>Sweet snacks</li>
-                </ul>
+              <li><b>Big 5</b>: headlamp, turquoise backpack</li>
+              <li><b>Safeway</b>: <a href="#food">food</a></li>
+              <li><b>Bank</b>: get cash</li>
+            </ul>
+            <h3>Hiking</h3>
+            <ul>
+              <li><label><input type="checkbox" />Sunscreen</label></li>
+              <li><label><input type="checkbox" />Sunglasses</label></li>
+              <li><label><input type="checkbox" />Hat</label></li>
+              <li><label><input type="checkbox" />First aid kit</label></li>
+              <li><label><input type="checkbox" />Backpack</label></li>
+              <li><label><input type="checkbox" />Binoculars</label></li>
+            </ul>
+            <h3>Painting</h3>
+            <ul>
+              <li><label><input type="checkbox" />Lap easel</label></li>
+              <li><label><input type="checkbox" />Pencil/eraser</label></li>
+              <li><label><input type="checkbox" />Ziploc bags for dirty supplies</label></li>
+              <li><label><input type="checkbox" />Paint</label></li>
+              <li><label><input type="checkbox" />Paint brushes</label></li>
+              <li><label><input type="checkbox" />Paint water cup (sealable)</label></li>
+              <li><label><input type="checkbox" />Canvas(es)</label></li>
+              <li><label><input type="checkbox" />Paper towel</label></li>
+              <li><label><input type="checkbox" />Paint rag</label></li>
+            </ul>
+            <h3>Navajo Nation State Fair</h3>
+            <ul>
+              <li><label><input type="checkbox" />Cash</label></li>
+            </ul>
+            <h3>Overnight</h3>
+            <ul>
+              <li><label><input type="checkbox" />Period products</label></li>
+              <li><label><input type="checkbox" />Perfume</label></li>
+              <li><label><input type="checkbox" />Small towel</label></li>
+              <li><label><input type="checkbox" />Flip flops</label></li>
+              <li><label><input type="checkbox" />Face wash</label></li>
+              <li><label><input type="checkbox" />Comb</label></li>
+              <li><label><input type="checkbox" />Claw clips/Hair stick</label></li>
+              <li><label><input type="checkbox" />Toothpaste</label></li>
+              <li><label><input type="checkbox" />Toothbrush</label></li>
+              <li><label><input type="checkbox" />Sleeping mask</label></li>
+            </ul>
+            <h3>Shower</h3>
+            <ul>
+              <li><label><input type="checkbox" />Moisturizer</label></li>
+              <li><label><input type="checkbox" />Big towel</label></li>
+              <li><label><input type="checkbox" />Body wash</label></li>
+              <li><label><input type="checkbox" />Soap</label></li>
+              <li><label><input type="checkbox" />Exfoliating net</label></li>
+              <li><label><input type="checkbox" />Deodorant</label></li>
+              <li><label><input type="checkbox" />Shampoo</label></li>
+              <li><label><input type="checkbox" />Conditioner</label></li>
+            </ul>
+            <h3>Essentials</h3>
+            <ul>
+                <li><label><input type="checkbox" />Phone</label></li>
+                <li><label><input type="checkbox" />Wallet</label></li>
+                <li><label><input type="checkbox" />Keys</label></li>
+                <li><label><input type="checkbox" />Pocket knife</label></li>
+                <li><label><input type="checkbox" />iPad</label></li>
+                <li><label><input type="checkbox" />Headlamp</label></li>
+                <li><label><input type="checkbox" />Flashlight</label></li>
+                <li><label><input type="checkbox" />Red flashlight</label></li>
+                <li><label><input type="checkbox" />Watch</label></li>
+                <li><label><input type="checkbox" />Charging cables</label></li>
+                <li><label><input type="checkbox" />Portable charger</label></li>
+            </ul>
+            <h3>For Rachel</h3>
+            <ul>
+              <li><label><input type="checkbox" />Gift*</label></li>
+            </ul>
+            <h3>Clothes</h3>
+            <ul>
+              <li><label><input type="checkbox" /><b>Friday</b>: Wear leggings and sporty top, bring hoodie and sweats</label></li>
+              <li><label><input type="checkbox" /><b>Saturday</b>: Cute and comfortable</label></li>
+              <li><label><input type="checkbox" /><b>Sunday</b>: Something to drive home in</label></li>
+              <li><label><input type="checkbox" />PJs</label></li>
+              <li><label><input type="checkbox" />Socks</label></li>
+              <li><label><input type="checkbox" />Fuzzy socks</label></li>
+              <li><label><input type="checkbox" />Bras</label></li>
+              <li><label><input type="checkbox" />Underwear</label></li>
+              <li><label><input type="checkbox" />Hiking shoes</label></li>
+              <li><label><input type="checkbox" />Converse</label></li>
+              <li><label><input type="checkbox" />Beanie</label></li>
+              <li><label><input type="checkbox" />Dirty clothes bag</label></li>
+            </ul>
+            <h3>Camping</h3>
+            <ul>
+              <li><label><input type="checkbox" />Trash bags</label></li>
+              <li><label><input type="checkbox" />Pillow</label></li>
+              <li><label><input type="checkbox" />Blanket</label></li>
+              <li><label><input type="checkbox" />Sleeping bag</label></li>
+              <li><label><input type="checkbox" />Sleeping pad</label></li>
+              <li><label><input type="checkbox" />Tent</label></li>
+              <li><label><input type="checkbox" />Picnic blanket</label></li>
+            </ul>
+            <h3 id="food">Food</h3>
+            <ul>
+              <li><label><input type="checkbox" />Water (Entire case)</label></li>
+              <li><label><input type="checkbox" />Monsters</label></li>
+              <li><label><input type="checkbox" />Chewy bars</label></li>
+              <li><label><input type="checkbox" />Liquid IV</label></li>
+              <li><label><input type="checkbox" />Ice breakers</label></li>
+              <li><label><input type="checkbox" />Dried fruit</label></li>
+              <li><label><input type="checkbox" />Sweet snacks</label></li>
             </ul>
             <p>*<i>need to buy</i></p>
             <h2>Itinerary</h2>
@@ -114,7 +147,7 @@ export default function TripPlanner() {
                     </tr>
                     <tr>
                         <th>12</th>
-                        <td>Lunch</td>
+                        <td>Lunch and save leftovers for dinner</td>
                     </tr>
                     <tr>
                         <th>1</th>
